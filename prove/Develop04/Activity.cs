@@ -11,7 +11,7 @@ public class Activity
     {
         Name = name;
         Description = description;
-        Duration = 0; // Asegurar que la duración se inicialice correctamente
+        Duration = 0;
     }
 
     public void DisplayStartingMessage()
