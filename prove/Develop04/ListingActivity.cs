@@ -26,6 +26,14 @@ public class ListingActivity : Activity
         DisplayEndingMessage();
     }
 
+    private string GetRandomPrompt()
+    {
+        string[] prompts = { "What are you grateful for today?", "List things that bring you joy.", "Name some achievements you're proud of." };
+        Random random = new Random();
+        int index = random.Next(prompts.Length);
+        return prompts[index];
+    }
+
     private List<string> GetListFromUser()
     {
         List<string> items = new List<string>();

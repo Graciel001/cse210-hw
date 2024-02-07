@@ -1,6 +1,6 @@
 using System;
 using System.Threading;
-//program
+
 public class Activity
 {
     protected string Name { get; set; }
@@ -11,7 +11,11 @@ public class Activity
     {
         Name = name;
         Description = description;
-        Duration = 0;
+    }
+
+    public void SetDuration(int duration)
+    {
+        Duration = duration;
     }
 
     public void DisplayStartingMessage()
