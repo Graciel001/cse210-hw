@@ -1,6 +1,6 @@
 using System;
 
-public class Goal
+public abstract class Goal
 {
     public string Description { get; private set; }
     public bool IsCompleted { get; private set; }
@@ -17,6 +17,9 @@ public class Goal
     {
         IsCompleted = true;
     }
+
+    // Método abstracto que debe ser implementado por las subclases
+    public abstract int GetValue();
 
     public override string ToString()
     {
