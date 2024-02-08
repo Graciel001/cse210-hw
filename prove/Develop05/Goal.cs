@@ -18,7 +18,6 @@ public abstract class Goal
         IsCompleted = true;
     }
 
-    // Método abstracto que debe ser implementado por las subclases
     public abstract int GetValue();
 
     public override string ToString()
