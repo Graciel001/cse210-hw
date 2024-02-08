@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        EternalQuestProgram eternalQuestProgram = new EternalQuestProgram();
+        eternalQuestProgram.Run();
     }
 }
